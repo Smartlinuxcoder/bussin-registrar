@@ -66,9 +66,18 @@ document.addEventListener("DOMContentLoaded", function() {
         body.classList.add('message-body');
         body.innerText = `${domain} ${isAvailable ? 'is available!' : 'is unavailable'}`;
 
-        article.appendChild(header);
-        article.appendChild(body);
+        const button = document.createElement('a');
+        button.classList.add('button', 'is-rounded');
+        button.href = `/dashboard/?domain=${domain}`;
+        button.innerText = 'Register it Now!';
 
+
+
+        article.appendChild(header);
+        if (isAvailable) {
+            body.appendChild(button);
+        }
+        article.appendChild(body);
         resultDiv.appendChild(article);
     }
 
