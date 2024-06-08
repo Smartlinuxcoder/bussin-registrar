@@ -55,24 +55,22 @@
         </div>
       </nav>
       <div class="container box">
-      <form class="box">
-        <div class="field">
-          <label class="label">Username</label>
-          <div class="control">
-            <input class="input" type="email" placeholder="e.g. alex" />
+        <form id="loginForm" class="box">
+          <div class="field">
+            <label class="label">Username</label>
+            <div class="control">
+              <input id="username" class="input" type="text" placeholder="e.g. alex" />
+            </div>
           </div>
-        </div>
-      
-        <div class="field">
-          <label class="label">Password</label>
-          <div class="control">
-            <input class="input" type="password" placeholder="********" />
+          <div class="field">
+            <label class="label">Password</label>
+            <div class="control">
+              <input id="password" class="input" type="password" placeholder="********" />
+            </div>
           </div>
-        </div>
-      
-        <button class="button is-primary">Log-in</button>
-      </form>
-      <a class="button is-info" href="/register/">Want to register instead?</a>
+          <button type="submit" class="button is-primary">Log-in</button>
+        </form>
+        <a class="button is-info" href="/register/">Want to register instead?</a>
       </div>
       <script src="script.js"></script>
   </body>

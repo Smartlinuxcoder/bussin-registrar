@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Smart napture registrar</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+    </head>
+    <body>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item">
+                    <h1 class="title has-text-centered">Webx registrar - Dashboard</h1>
+                </a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+    
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                    <a href="/" class="navbar-item">
+                        Home
+                      </a>
+                    <a href="/dashboard" class="navbar-item">Dashboard</a>
+    
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">More</a>
+                        <div class="navbar-dropdown">
+                            <a href="https://github.com/Smartlinuxcoder/sso-api" class="navbar-item">Api Documentation</a>
+                            <a href="https://github.com/Smartlinuxcoder/" class="navbar-item">Contact</a>
+                            <hr class="navbar-divider">
+                            <a href="https://github.com/Smartlinuxcoder/sso-api/issues" class="navbar-item">Report an issue</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <button class="button is-light">Log out</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    
+        <div class="container section p-auto box">
+            <h1 class="title is-3 has-text-centered">Welcome to your Dashboard</h1>
+            <p class="subtitle">Here are your domains:</p>
+            <ul id="domainList" class="mb-4"></ul>
+        </div>
+    
+        <script src="checklog.js"></script>
+    </body>
+</html>
